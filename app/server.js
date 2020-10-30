@@ -33,7 +33,7 @@ const routes = require("./routes");
 
 app.use("/", routes);
 app.get("/", (req, res) => {
-  res.send({ info: "Node.js, Express, and Postgres API" });
+  res.send({ info: "Tuten labs backend test, developed by Andres Navarro" });
 });
 
 /** Express error handler */
