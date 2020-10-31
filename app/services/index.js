@@ -9,6 +9,10 @@ function calculateTime(object) {
     .utc()
     .add(-1 * object.timezone, "hours")
     .format("HH:mm:ss");
+
+  if (time === "Invalid date") {
+    return { error: "Invalid date" };
+  }
   return { time, timezone: "utc" };
 }
 

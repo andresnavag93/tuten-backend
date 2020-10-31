@@ -1,6 +1,6 @@
 # Tuten Backend App
 
-- Backedn developed with Node.Js and Javascript
+- Backend developed with Node.Js and Javascript
 
 ### Url address
 

@@ -9,7 +9,12 @@ const postTime = async (req, res) => {
   try {
     let object = req.body;
     const response = calculateTime(object);
-    res.send(response);
+    if (response.error) {
+      res.status(400).send(response);
+    } else {
+      res.send(response);
+    }
+    // res.send(response);
   } catch (e) {
     res.send({
       error: "Not Found",
